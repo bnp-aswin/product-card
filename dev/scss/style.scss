@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --primary:#ea402d;
+    --green: #44c864;
+    --white: #fff;
+}
+body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-transform: uppercase;
+}
+.card {
+    display: flex;
+    max-width: 30rem;
+    flex-direction: column;
+    .top{
+        background-color: var(--primary);
+        border-radius: 1rem 1rem 0 0;
+        color: var(--white);
+        position: relative;
+
+        .content{
+            padding: 2.5rem 2.5rem 0 2.5rem;
+            .title {
+                font-weight: 400;
+                margin-bottom: 1.2rem;
+                font-size: 2.5rem;
+            }
+            .logo {
+                margin-bottom: 2rem;
+            }
+            .desc{
+                text-transform: none;
+                font-size: 1.4rem;
+            }
+            .fas {
+                color: black;
+                font-size: 11rem;
+                margin-left: -2.5rem;
+                line-height: 1;
+                font-weight: 900;
+                letter-spacing: 1rem;
+                opacity: .1;
+            }
+            .product {
+                position: absolute;
+                top: -1.5rem;
+                right: -8rem;
+            }
+        }
+    }
+    .bottom {
+        background-color: var(--white);
+        border-radius: 0 0 1rem 1rem;
+        position: relative;
+
+        .content {
+            padding: 2.5rem 2.5rem 3.5rem 2.5rem;
+
+            .title {
+                margin-bottom: .1rem;
+                font-size: 2rem;
+                display: inline-block;
+            }
+
+             .new {
+                margin-left: 1rem;
+                background-color: var(--green);
+                color: var(--white);
+                padding: .3rem;
+                font-size: 1rem;
+                border-radius: .3rem;
+                vertical-align: middle;
+                margin-top: -.2rem;
+            }
+            .desc {
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+             .stars {
+                margin-bottom: .5rem;
+
+                 .fa:last-child {
+                    color: lightgray;
+                }
+            }
+            .size{
+                .sizes {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+
+                    .selected-size {
+                        background-color: var(--primary);
+                        color: var(--white);
+                        padding: .3rem .5rem;
+                        border-radius: 50%;
+                    }
+                }
+
+            }
+            .color{
+                margin-bottom: 1.5rem;
+
+                .colors{
+                    .radio{
+                        height: 2rem;
+                        width: 2rem;
+                        display: inline-block;
+                        border-radius: 50%;
+                        border: .4rem solid var(--white); 
+                    }
+                    .red{
+                        background-color: var(--primary);
+                        outline: .1rem solid var(--primary);
+                    }
+                    .green {
+                        background-color: var(--green);
+                    }
+                    .yellow {
+                        background-color: #ffd700;
+                    }
+                }
+            }
+            .size, .color{
+                 ul{
+                    li{
+                        display: inline-block;
+                        margin-right: 2rem;
+                    }
+                }
+                .title{
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    margin-bottom: .8rem;
+                }
+            }
+            .price-list {
+                display: inline-block;
+                background-color: var(--green);
+                color: var(--white);
+                padding: .5rem 1.5rem;
+                border-radius: .5rem;
+                font-size: 2rem;
+                position: absolute;
+                right: -1rem;
+                bottom: 1.5rem;
+
+                .price {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
