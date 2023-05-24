@@ -1,152 +1,154 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-:root{
-    --primary:#ea402d;
-    --green: #44c864;
-    --white: #fff;
+
+html {
+  font-size: 62.5%;
 }
-body{
-    background-color: black;
-    font-family: 'Poppins', sans-serif;
+
+:root {
+  --primary:#ea402d;
+  --green: #44c864;
+  --white: #fff;
 }
+
+body {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+
 .container {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-    text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  text-transform: uppercase;
 }
+
 .card {
-    display: flex;
-    max-width: 300px;
-    flex-direction: column;
+  display: flex;
+  max-width: 30rem;
+  flex-direction: column;
 }
-.top{
-    background-color: var(--primary);
-    border-radius: 10px 10px 0 0;
-    color: var(--white);
-    position: relative;
+.card .top {
+  background-color: var(--primary);
+  border-radius: 1rem 1rem 0 0;
+  color: var(--white);
+  position: relative;
 }
-.top .content{
-    padding: 25px 25px 0 25px;
+.card .top .content {
+  padding: 2.5rem 2.5rem 0 2.5rem;
 }
-.logo {
-    margin-bottom: 20px;
+.card .top .content .title {
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  font-size: 2.5rem;
 }
- .top .title {
-    font-weight: 400;
-    margin-bottom: 12px;
- }
-.top .desc{
-    text-transform: none;
+.card .top .content .logo {
+  margin-bottom: 2rem;
 }
-.top .content .fas {
-    /* position: absolute; */
-    color: black;
-    font-size: 110px;
-    margin-left: -25px;
-    line-height: 1;
-    font-weight: 900;
-    letter-spacing: 10px;
-    opacity: .1;
+.card .top .content .desc {
+  text-transform: none;
+  font-size: 1.4rem;
 }
-.product {
-    position: absolute;
-    top: -15px;
-    right: -80px;
-    /* bottom: 0; */
+.card .top .content .fas {
+  color: black;
+  font-size: 11rem;
+  margin-left: -2.5rem;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: 1rem;
+  opacity: 0.1;
 }
-.bottom {
-    background-color: var(--white);
-    border-radius: 0 0 10px 10px;
-    position: relative;
+.card .top .content .product {
+  position: absolute;
+  top: -1.5rem;
+  right: -8rem;
 }
-.bottom .content {
-    padding: 25px 25px 35px 25px;
+.card .bottom {
+  background-color: var(--white);
+  border-radius: 0 0 1rem 1rem;
+  position: relative;
 }
- .bottom .title {
-     margin-bottom: 1px;
-     font-size: 20px;
-     display: inline-block;
- }
-
- .new {
-     margin-left: 10px;
-     background-color: var(--green);
-     color: var(--white);
-     padding: 3px;
-     font-size: 10px;
-     border-radius: 3px;
-     vertical-align: middle;
-     margin-top: -2px;
- }
- .bottom .desc {
-     font-size: 12px;
-     font-weight: 700;
- }
- .stars {
-     margin-bottom: 5px;
- }
-
- .fa:last-child {
-     color: lightgray;
- }
- .size .sizes {
-     font-size: 12px;
-     font-weight: 600;
- }
-
- .sizes .selected-size {
-     background-color: var(--primary);
-     color: var(--white);
-     padding: 3px 5px;
-     border-radius: 50%;
- }
-ul li{
-    display: inline-block;
-    margin-right: 20px;
+.card .bottom .content {
+  padding: 2.5rem 2.5rem 3.5rem 2.5rem;
 }
-
-.size .title, .color .title{
-    font-size: 13px;
-    font-weight: 700;
-    margin-bottom: 8px;
+.card .bottom .content .title {
+  margin-bottom: 0.1rem;
+  font-size: 2rem;
+  display: inline-block;
 }
-.size, .color{
-    margin-bottom: 15px;
+.card .bottom .content .new {
+  margin-left: 1rem;
+  background-color: var(--green);
+  color: var(--white);
+  padding: 0.3rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  vertical-align: middle;
+  margin-top: -0.2rem;
 }
-
-.price-list{
-    display: inline-block;
-    background-color: var(--green);
-    color: var(--white);
-    padding: 5px 15px;
-    border-radius: 5px;
-    font-size: 20px;
-    position: absolute;
-    right: -10px;
-    bottom: 15px;
+.card .bottom .content .desc {
+  font-size: 1.2rem;
+  font-weight: 700;
 }
-.price{
-     font-weight: 700;
+.card .bottom .content .stars {
+  margin-bottom: 0.5rem;
 }
-.colors .radio{
-    height: 20px;
-    width: 20px;
-    display: inline-block;
-    border-radius: 50%;
-    border: 4px solid var(--white); 
+.card .bottom .content .stars .fa:last-child {
+  color: lightgray;
 }
-
-.colors .red{
-    background-color: var(--primary);
-    outline: 1px solid var(--primary);
+.card .bottom .content .size .sizes {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
-.colors .green {
-    background-color: var(--green);
+.card .bottom .content .size .sizes .selected-size {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.3rem 0.5rem;
+  border-radius: 50%;
 }
-.colors .yellow {
-    background-color: #ffd700;
+.card .bottom .content .color {
+  margin-bottom: 1.5rem;
 }
+.card .bottom .content .color .colors .radio {
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  border-radius: 50%;
+  border: 0.4rem solid var(--white);
+}
+.card .bottom .content .color .colors .red {
+  background-color: var(--primary);
+  outline: 0.1rem solid var(--primary);
+}
+.card .bottom .content .color .colors .green {
+  background-color: var(--green);
+}
+.card .bottom .content .color .colors .yellow {
+  background-color: #ffd700;
+}
+.card .bottom .content .size ul li, .card .bottom .content .color ul li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+.card .bottom .content .size .title, .card .bottom .content .color .title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+.card .bottom .content .price-list {
+  display: inline-block;
+  background-color: var(--green);
+  color: var(--white);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  position: absolute;
+  right: -1rem;
+  bottom: 1.5rem;
+}
+.card .bottom .content .price-list .price {
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */
